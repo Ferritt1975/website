@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css" />
 
     <!-- Slider
     ================================================== -->
@@ -58,7 +59,7 @@
         <ul class="nav navmenu-nav"> <!--- Menu -->
             <li><a href="#home" class="page-scroll">Home</a></li>
             <li><a href="#about-me" class="page-scroll">About Me</a></li>
-            <li><a href="#qualifications" class="page-scroll">Qualificaitons</a></li>
+            <li><a href="#qualifications" class="page-scroll">Qualifications</a></li>
             <li><a href="#social" class="page-scroll">Social</a></li>
             <li><a href="#contact" class="page-scroll">Contact Us</a></li>
         </ul><!--- End Menu -->
@@ -71,15 +72,20 @@
             <nav id="menu" data-toggle="offcanvas" data-target=".navmenu">
                 <span class="fa fa-bars"></span>
             </nav>
-
             <div class="content">
-                <h4>Hi.  I'm Erik.</h4>
-                <hr>
-                <div class="header-text btn">
-                    <h1><span id="head-title"></span></h1>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img class="media-object" style="width: 192px;" src="img/headshot.png" alt="Erik B. Cass"></a>
+                    </div>
+                    <div class="media-body">
+                        <h4>Hi.  I'm Erik.</h4>
+                        <hr>
+                        <div class="header-text btn">
+                            <h1><span id="head-title"></span></h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-
             <a href="#about-me" class="down-btn page-scroll">
                 <span class="fa fa-angle-down"></span>
             </a>
@@ -92,11 +98,32 @@
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="section-title">
-                        <h2>About Me</h2>
+                        <h2>Professional Profile</h2>
                         <hr>
                     </div>
-                    <p>Passionate, dynamic, and versatile Information Technology Professional with a thorough level of knowledge across a diverse range of subjects.  Adept at taking on unique and challenging projects and developing concrete solutions from sub-optimal definitions.  Advocates continual personal and professional development, not only for himself, but also amongst peers.  Actively seeks out new challenges.  Demonstratable ability to deliver results with little to no oversight.  Respected amongst peers for technical prowess and capability.  Understands and adapts to the unique cultures found within the Information Technology and Government Contracting fields.  Maintains a positive attitude and outlook, even under stressful conditions.  Confidant in both his abilities to deliver quality solutions, as well as ability to work with others.  Tested, and proven.  Honorable.  Shown capacity to surge to meet demand.  Marketable skillset that is advantageous to business development.</p>
-                    <a href="#cv" class="down-btn page-scroll">
+                    <p>I consider myself to be a passionate, dynamic, and 
+                    versatile Information Technology Professional with a 
+                    thorough level of knowledge across a diverse range of 
+                    subjects.  I feel that I am very adept at taking on unique 
+                    and challenging projects and developing concrete solutions 
+                    from sub-optimal definitions.</p>
+                    <p>I am a firm advocate of continual personal and 
+                    professional development, not only for myself, but also my 
+                    peers.  I actively seeks out new challenges and I have a 
+                    demonstratable ability to deliver results with little to no 
+                    oversight.</p>
+                    <p>I am respected amongst peers for technical prowess and 
+                    capability.  I understand and adapt to the unique cultures 
+                    found within the Information Technology and Government 
+                    Contracting fields.</p>
+                    <p>I maintains a positive attitude and outlook, even under 
+                    stressful conditions.  I am confidant in both my ability to 
+                    deliver quality solutions, as well as my ability to work 
+                    with others.  I am tested, proven, and honorable.  I've 
+                    shown the capacity to surge to meet demand.  I posess a 
+                    marketable skillset that is advantageous to business 
+                    development.</p>
+                    <a href="#qualifications" class="down-btn page-scroll">
                         <span class="fa fa-angle-down"></span>
                     </a>
                 </div>
@@ -109,7 +136,7 @@
         <div class="overlay">
             <div class="container">
                 <a href="#">
-                    <span class="fa fa-play"></span>
+                    <!-- <span class="fa fa-play"></span> -->
                 </a>
             </div>
         </div>
@@ -133,27 +160,31 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="service">
-                        <span class="fa fa-book fa-3x"></span>
-                        <h4>Resume</h4>
-                        <p>An introduction for resume goes here</p>
+                        <span class="fa fa-briefcase fa-3x"></span>
+                        <h4>Experience</h4>
+                        <p>A brief history of employment including duties and responsibilties.</p>
+                        <p><a id="experience" href="#experience_content">See more...</a></p>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service">
-                        <span class="fa fa-bicycle fa-3x"></span>
+                        <span class="fa fa-certificate fa-3x"></span>
                         <h4>Certfications</h4>
-                        <p>An introduction for certifications goes here</p>
+                        <p>A listing of current and previously held Information Technology certifications.</p>
+                        <p><a id="certification" href="#certification_content">See more...</a></p>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-4">
                     <div class="service">
-                        <span class="fa fa-plug fa-3x"></span>
-                        <h4>Projects</h4>
-                        <p>An introduction for projects goes here</p>
+                        <span class="fa fa-graduation-cap fa-3x"></span>
+                        <h4>Education</h4>
+                        <p>A breakdown of completed education programs and other courseware.</p>
+                        <p><a id="education" href="#education_content">See more...</a></p>
                     </div>
-                </div>
+                </div> 
+
             </div>
             <a href="#social" class="down-btn page-scroll">
                 <span class="fa fa-angle-down"></span>
@@ -164,7 +195,7 @@
     <!-- Call-to-Action Section -->
     <div id="cta">
         <div class="container text-center">
-            <a href="#" class="btn go-to-btn">Check our shop</a>
+            <!-- <a href="#" class="btn go-to-btn">Call To Action</a> -->
         </div>
     </div>
 
@@ -187,13 +218,13 @@
                 <div class="col-md-3 col-sm-6 nopadding">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <a href="https://github.com/Ferritt1975">
                                 <div class="hover-text">
                                     <h5>GitHub</h5>
                                     <p class="lead">GitHub</p>
                                     <div class="hline"></div>
                                 </div>
-                                <img src="img/portfolio/01.jpg" class="img-responsive" alt="...">
+                                <img src="img/social/octocat.png" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
@@ -207,7 +238,7 @@
                                     <p class="lead">LinkedIn</p>
                                     <div class="hline"></div>
                                 </div>
-                                <img src="img/portfolio/02.jpg" class="img-responsive" alt="...">
+                                <img src="img/social/linkedin.png" class="img-responsive" alt="...">
                             </a>
                         </div>
                     </div>
@@ -222,7 +253,7 @@
                                     <div class="hline"></div>
                                 </div>
                             </a>
-                            <img src="img/portfolio/03.jpg" class="img-responsive" alt="...">
+                            <img src="img/social/fieldnation.png" class="img-responsive" alt="...">
                         </div>
                     </div>
                 </div>
@@ -236,149 +267,20 @@
                                     <div class="hline"></div>
                                 </div>
                             </a>
-                            <img src="img/portfolio/04.jpg" class="img-responsive" alt="...">
+                            <img src="img/social/bitbucket.png" class="img-responsive" alt="...">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="space"></div>
-        <div class="text-center">
-            <a href="#" class="btn read-more-btn">Check on Dribbble</a>
-            <br>
-            <a href="#about-us" class="down-btn page-scroll"><span class="fa fa-angle-down"></span></a>
-        </div>
     </div>
-
-    <!-- Clients Section -->
-    <div id="clients">
-        <div class="overlay">
-            <div class="container text-center">
-                <div class="section-title">
-                    <h2>Our Partners</h2>
-                    <hr>
-                </div>
-
-                <ul class="clients">
-                    <li><a href="#"><img src="img/clients/01.png" class="img-responsive" alt="..."></a></li>
-                    <li><a href="#"><img src="img/clients/02.png" class="img-responsive" alt="..."></a></li>
-                    <li><a href="#"><img src="img/clients/03.png" class="img-responsive" alt="..."></a></li>
-                    <li><a href="#"><img src="img/clients/04.png" class="img-responsive" alt="..."></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Us Section -->
-    <!--
-    <div id="about-us">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="section-title">
-                        <h2>About Us</h2>
-                        <hr>
-                    </div>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="row">
-                <div class="col-md-10 col-sm-10">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team">
-                                <img src="img/team/02.jpg" class="img-responsive img-circle" alt="...">
-                                <br>
-                                <h4>Lian Gwapa</h4>
-                                <p class="small">CEO/Founder</p>
-                                <hr>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team">
-                                <img src="img/team/04.jpg" class="img-responsive img-circle" alt="...">
-                                <br>
-                                <h4>Jenn Pereira</h4>
-                                <p class="small">Web Coder</p>
-                                <hr>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4">
-                            <div class="team">
-                                <img src="img/team/03.jpg" class="img-responsive img-circle" alt="...">
-                                <br>
-                                <h4>Alan Podemski</h4>
-                                <p class="small">Web Designer</p>
-                                <hr>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-2">
-                    <div class="team hire">
-                        <h4>We Are Hiring!</h4>
-                        <hr>
-                        <div class="space"></div>
-                        <a href="#">
-                            <span class="fa fa-paper-plane-o fa-2x"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <a href="#contact" class="page-scroll down-btn">
-                    <span class="fa fa-angle-down"></span>
-                </a>
-            </div>
-
-        </div>
-    </div>
-    -->
-        <!-- Testimonial Section -->
-    <!--
-    <div id="testimonials">
-        <div class="overlay">
-            <div class="container">
-                <div class="section-title">
-                    <h2>What my Clients Say...</h2>
-                    <hr>
-                </div>
-
-                <div id="testimonial" class="owl-carousel owl-theme">
-                  <div class="item">
-                    <h3>Et iusto odio dignissimos ducimus qui blanditiis <br>praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <br>occaecati cupiditate non provident. </h3>
-                    <br>
-                    <h6>LJ, Abc Company</h6>
-                  </div>
-
-                  <div class="item">
-                    <h3>Fusce dapibus, tellus ac cursus commodo, tortor<br> mauris condimentum. Duis mollis, est non commodo luctus, nisi erat </h3>
-                    <br>
-                    <h6>Kai, Web Geekster</h6>
-                  </div>
-
-                  <div class="item">
-                    <h3>Cras justo odio, dapibus ac facilisis in, egestas <br>eget quam. Donec id elit non mi porta gravida at eget metus.</h3>
-                    <br>
-                    <h6>Jenn, Coders' Playground</h6>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
 
     <!-- Contact Section -->
     <div id="contact">
         <div class="container">
             <div class="section-title text-center">
-                <h2>Contact Us</h2>
+                <h2>Contact Me</h2>
                 <hr>
             </div>
             <div class="space"></div>
@@ -388,9 +290,7 @@
                     <address>
                         <strong>Address</strong><br>
                         <br>
-                        ThemeForces.Com<br>
-                        Igbalangao, Bugasong, Anitque<br>
-                        5704, Philippines<br>
+                        erikcass.com<br>
                         Phone: (123) 456-7890
                         <ul class="social">
                             <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -423,17 +323,313 @@
         </div>
     </div>
 
+    <div style='display:none'>
+        <div id='experience_content' style='margin: 50px; padding:10px; background:#fff;'>
+            <p class='h3'>Work Experience</p>
+            <div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#gdit" aria-controls="gdit" role="tab" data-toggle="tab">GDIT</a></li>
+                    <li role="presentation"><a href="#intecon" aria-controls="intecon" role="tab" data-toggle="tab">Intecon</a></li>
+                    <li role="presentation"><a href="#mobius" aria-controls="mobius" role="tab" data-toggle="tab">Mobius</a></li>
+                    <li role="presentation"><a href="#csc" aria-controls="csc" role="tab" data-toggle="tab">CSC</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="gdit">
+                        <div class="media">
+                            <div class='media-left'>
+                                <a href='#'>
+                                    <img class="media-object" style="width:120px; height: auto;" src="/img/exp/gdit.png" alt="General Dynamics Information Technology">
+                                </a>
+                            </div>
+                            <div class='media-body'>
+                                <h4 class="media-heading">ARMA Global / General Dynamics Information Technology</h4>
+                                As the Chief Solutions Architect for the Cloud Center of Excellence, I oversee the construction of a fully automated rollout of services using industry standard tools and languages.  All systems are built with elasticity in mind, and automatically deployed and redeployed in the event of a system failure or changes in usage patterns.  I design and implment comprehensive cross-account structures to supporton-boarding of tenant organizations with diverserequrements, while maintaining a strong, yet flexiblesecurity posture.
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="intecon">
+                        <div class="media">
+                            <div class='media-left'>
+                                <a href='#'>
+                                    <img class="media-object" style="width:120px; height: auto;" src="/img/exp/intecon.png" alt="Intecon">
+                                </a>
+                            </div>
+                            <div class='media-body'>
+                                <h4 class="media-heading">Intecon</h4>
+                                Responsible for implementation and support of AN/USQ-163 Falconer (AOC) Weapon System applications including TBMCS, PEX, SOFApps, GCCS, PFPS, IPL, GPL and other Intel and C2 systems. Core competency in managing bare metal and virtualized Microsoft Windows workstations and servers, Solaris and Unix operating systems supporting Joint Special Operations Air Components worldwide.  In this capacity, I implemented a comprehensive vulnerability management plan using Microsoft Office SharePoint Services involving multiple networks and classifications. Additionaly, I deployed a robust knowledge portal and library for technical staff using a number of commercially available products. Finally, I was instremental in designing key aspects of the disaster response and recovery plan used during the Gulf Coast hurricane season.
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="mobius">
+                        <div class="media">
+                            <div class='media-left'>
+                                <a href='#'>
+                                    <img class="media-object" style="width:120px; height: auto;" src="/img/exp/mobius.png" alt="Mobius Industries">
+                                </a>
+                            </div>
+                            <div class='media-body'>
+                                <h4 class="media-heading">Mobius Industries</h4>
+                                As a Simulations Technician I designed, implemented, and supported the numerous simulation platforms used by the Marine Corps Tactics and Operations Group located at Marine Base Twentynine Palms, California in support of combined arms training and unit training management and readiness at the battalion and regimental levels.  I was principally responsible for implementing the Marine Corps Federation suite of software, to include MTWS 4.0, JCATS 8.0, and federation management.  In addition, I developed and conducted a software evaluation plan to improve performance of the VBS2 simulator, allowing it to operate efficiently well beyond its original design specifications.  I also led the deployment of multiple simulation platforms in a virtualized environment using the XEN hypervisor.
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="csc">
+                        <div class="media">
+                            <div class='media-left'>
+                                <a href='#'>
+                                    <img class="media-object" style="width:120px; height: auto;" src="/img/exp/csc.png" alt="Computer Science Corporation">
+                                </a>
+                            </div>
+                            <div class='media-body'>
+                                <h4 class="media-heading">Computer Science Corporation</h4>
+                                As a Systems Administrator, I was responsible for the design, implementation, and maintenance of  classified, unclassified, and commercial computer network systems in support of a counter narcotics operation, routinely consisting of between 300 and 400 civilian, government, and military users.  In this capacity, I ompletely redesigned the network project for the Curacao Forward Operating Location; resulting in a formalized Positive Significant Incident (PSI) exceeding $300,000 in value.  Additionally, I implemented numerous automation routines, including software deployment, patch management, and workstation preparation, permitting existing labor to be redirected to more value added areas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style='display:none'>
+        <div id='certification_content' style='margin: 50px; padding: 10px; background:#fff;'>
+            <p class='h3'>Certifications</p>
+            <div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#aws" aria-controls="aws" role="tab" data-toggle="tab">AWS</a></li>
+                    <li role="presentation"><a href="#comptia" aria-controls="comptia" role="tab" data-toggle="tab">CompTIA</a></li>
+                    <li role="presentation"><a href="#redhat" aria-controls="messages" role="tab" data-toggle="tab">Red Hat</a></li>
+                    <li role="presentation"><a href="#microsoft" aria-controls="settings" role="tab" data-toggle="tab">Microsoft</a></li>
+                    <li role="presentation"><a href="#vmware" aria-controls="settings" role="tab" data-toggle="tab">VMWare</a></li>
+                    <li role="presentation"><a href="#other" aria-controls="settings" role="tab" data-toggle="tab">Other</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="aws">
+                         <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/awssaa.png" alt="AWS Certified SysOps Administrator - Associate">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">AWS Certified Solutions Architect - Associate</h4>
+                                An aissociate exam is intended for individuals with experience designing distributed applications and systems on the AWS platform.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/awssap.png" alt="AWS Certified Solutions Architect - Professional">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">AWS Certified Solutions Architect - Professional</h4>
+                                A professional that exam validates advanced technical skills and experience in designing distributed applications and systems on the AWS platform.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/awsdva.png" alt="AWS Certified Developer - Associate">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">AWS Certified Developer - Associate</h4>
+                                An associate exam validates technical expertise in developing and maintaining applications on the AWS platform.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/awssaa.png" alt="AWS Certified Solutions Architect - Associate">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">AWS Certified SysOps Administrator - Associate</h4>
+                                An associate exam validates technical expertise in deployment, management, and operations on the AWS platform.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/awsdop.png" alt="AWS Certified DevOps Engineer - Professional">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">AWS Certified DevOps Engineer - Professional</h4>
+                                A professional exam that validates technical expertise in provisioning, operating, and managing distributed application systems on the AWS platform.
+                            </div>
+                        </div>
+                   </div>
+                    <div role="tabpanel" class="tab-pane" id="comptia">
+                         <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/caspce.png" alt="Certifed Advanced Security Practitioner">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Certifed Advanced Security Practitioner</h4>
+                                Certifies critical thinking and judgment across a broad spectrum of security disciplines and requires candidates to implement clear solutions in complex environments
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/cloud+ce.png" alt="Cloud+">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Cloud+</h4>
+                                Accredits IT professionals with the constantly changing and advancing knowledge they need to be successful in today's cloud environment.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/security+ce.png" alt="Security+">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Security+</h4>
+                                CompTIA Security+ certification covers network security, compliance and operation security, threats and vulnerabilities as well as application, data and host security. Also included are access control, identity management, and cryptography.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/a+ce.png" alt="A+">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">A+</h4>
+                                A+ certified professionals have mastered the technologies found in today's extensive and varied IT environments, from mobile to traditional devices and operating systems. They can confidently handle the most challenging technology problems more efficiently.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/network+ce.png" alt="Network+">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Network+</h4>
+                                CompTIA Network+ professionals are trained to work with a variety of hardware, software and networks. Take your talents wherever your IT ambitions lead you.
+                            </div>
+                        </div>
+                    </div>
+                   <div role="tabpanel" class="tab-pane" id="redhat">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/rhcsa.png" alt="Red Hat Certified Systems Administrator">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Red Hat Certified System Administrator</h4>
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/rhce.png" alt="Red Hat Certified Engineer">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Red Hat Certified Engineer</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="microsoft">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/mcse.png" alt="Microsoft Certified Systems Engineer">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Microsoft Certified Systems Engineer</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="vmware">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/vca-dcv.png" alt="VMware Certified Associate - Data Center Virtualization">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">VMware Certified Associate - Data Center Virtualization</h4>
+                                The VMware Certified Associate - Data Center Virtualization exam assesses the ability of VCA candidates to identify the technical requirements involved in data center virtualization and, And then associate them with the products and technical solutions that meet those requirements. 
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 120px; height: auto;" src="/img/certs/vca-cloud.png" alt="VMWare Certified Associate - Cloud">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">VMware Certified Associate - Cloud </h4>
+                                The VMware VCA Certified Associate - Cloud exam assesses VCA candidates for their ability to determine the technical requirements for cloud infrastructure virtualization and align them with the Technical solutions and solutions that meet these requirements.
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="other">
+                          <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: 64px; height: 64px;" src="/img/certs/cspo.png" alt="Certifed Scrum Product Owner">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Certifed Scrum Product Owner</h4>
+                                Certified Scrum Product Owner® professionals have been taught the Scrum terminology, practices, and principles that enable them to fulfill the role of Product Owner on a Scrum team.
+                            </div>
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" style="width: auto; height: 64px;" src="/img/certs/lce.png" alt="LinBit Certified Engineer">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">LinBit Certified Engineer</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style='display:none'>
+        <div id='education_content' style='margin: 50px; padding:10px; background:#fff;'>
+            <p class='h3'>Education</p>
+            <div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#fsu" aria-controls="fsu" role="tab" data-toggle="tab">FSU</a></li>
+                    <li role="presentation"><a href="#nwfsc" aria-controls="intecon" role="tab" data-toggle="tab">NWFSC</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="fsu">
+                        <div class="media">
+                            <div class='media-left'>
+                                <a href='#'>
+                                    <img class="media-object" style="width:120px; height: auto;" src="/img/edu/fsu.png" alt="Florida State University">
+                                </a>
+                            </div>
+                            <div class='media-body'>
+                                <h4 class="media-heading">Florida State University</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="nwfsc">
+                        <div class="media">
+                            <div class='media-left'>
+                                <a href='#'>
+                                    <img class="media-object" style="width:120px; height: auto;" src="/img/edu/nwfsc.png" alt="nwfsc">
+                                </a>
+                            </div>
+                            <div class='media-body'>
+                                <h4 class="media-heading">North West Florida State College</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav id="footer">
         <div class="container">
              <div class="pull-left">
-                <p>2014 © Arcadia. All Rights Reserved. Coded by <a href="https://dribbble.com/jennpereira">Jenn</a> & Designed by <a href="https://dribbble.com/alanpodemski">Alan</a></p>
+                <p>2017 © Erik B. Cass. All Rights Reserved. Arcadia Theme coded by <a href="https://dribbble.com/jennpereira">Jenn</a> &amp; Designed by <a href="https://dribbble.com/alanpodemski">Alan</a></p>
             </div>
             <div class="pull-right"> 
                 <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
             </div>
         </div>
     </nav>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -444,11 +640,37 @@
     <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
 
     <script src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("a#experience").fancybox({
+            'hideOnContentClick': true,
+            'hideOnOverlayClick': true,
+            'scrolling': 'yes',
+            'padding': 40,
+            'margin': 80
+        });
+        $("a#certification").fancybox({
+            'hideOnContentClick': true,
+            'hideOnOverlayClick': true,
+            'scrolling': 'yes',
+            'padding': 40,
+            'margin': 80
+        });
+        $("a#education").fancybox({
+            'hideOnContentClick': true,
+            'hideOnOverlayClick': true,
+            'scrolling': 'yes',
+            'padding': 40,
+            'margin': 80
+        });
+    });
+    </script>
     <script src="js/typed.js"></script>
     <script>
       $(function(){
           $("#head-title").typed({
-            strings: ["We make websites^1000", "24/7 available for hire^1000" ,"Web design with diffence^1000"],
+            strings: ["cloud computing^1000", "compliance^1000", "accreditation^1000" ,"automation^1000"],
             typeSpeed: 100,
             loop: true,
             startDelay: 100

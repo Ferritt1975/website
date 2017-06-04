@@ -602,3 +602,9 @@ nav#footer{
 }
 #footer a:hover{
 	color: #c59a6d;}
+
+.cert-logo {
+    height: 75px;
+    width: auto;
+    margin-right: 10px;
+}
